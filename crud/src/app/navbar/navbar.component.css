@@ -1,0 +1,24 @@
+.links a {
+    text-decoration: none;
+    color: #f5f5f7;
+    margin-right: 20px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    background-color: rgba(0,0,0,0.8);
+}
+.logo{
+    margin-right: 50px;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #f5f5f7;
+}
+.links{
+    margin-left: 50px;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+}

@@ -1,0 +1,23 @@
+.grid12 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 3em;
+    grid-row-gap: 3em;
+}
+.ma {
+    margin: auto;
+}
+.wi90 {
+    width: 90%;
+    max-width: 1520px;
+}
+.mt100{
+    margin-top: 100px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+form{
+    grid-column: 5/span 4;
+}

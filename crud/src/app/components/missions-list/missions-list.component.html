@@ -1,0 +1,26 @@
+<div class="todo grid12 wi90 ma mt100">
+  <div class="donetask">Missions en cours</div>
+  <div class="card" class="list-group-item" *ngFor="let mission of missions; let i = index">
+    <ng-container *ngIf="mission.done === false">
+      <div class="missiontitle">{{ mission.title }}</div>
+      <div class="missiondesc">{{ mission.description }}</div>
+      <div class="missionaction">
+        <button (click)="supprMission(mission)">Supprimer</button>
+        <button (click)="endTask(mission)">Terminer</button>
+      </div>
+    </ng-container>
+  </div>
+</div>
+
+<div class="done grid12 wi90 ma mt100">
+  <div class="donetask">Missions Terminées</div>
+  <div class="card" class="list-group-item" *ngFor="let mission of missionsended; let i = index">
+    <ng-container *ngIf="mission.done === true">
+      <div class="missiontitle">{{ mission.title }}</div>
+      <div class="missiondesc">{{ mission.description }}</div>
+      <div class="missionaction">
+        <button (click)="supprMission(mission)">Supprimer</button>
+      </div>
+    </ng-container>
+  </div>
+</div>

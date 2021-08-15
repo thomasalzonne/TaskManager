@@ -1,0 +1,14 @@
+<div class="wi90 grid12 ma mt100">
+    <form #missionform="ngForm" (ngSubmit) = "savemission(missionform.value)">
+        <div class="form-group">
+            <label for="missionName">Nom de la mission</label>
+            <input required ngModel name="missionName" id="missionName" #missionName="ngModel" type="text" class="formcontrol">
+            <div class="fail" *ngIf="missionName.touched && !missionName.valid">Un nom de mission est requis</div>
+        </div>
+        <div class="form-group">
+            <label for="description">But de la mission</label>
+            <textarea ngModel name="description" id="description" cols="30" rows="10" class="formcontrol"></textarea>
+        </div>
+        <button class="btn">Créer la mission</button>
+    </form>
+</div>
